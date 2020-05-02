@@ -1,0 +1,22 @@
+# 服务端口
+server:
+  port: 8080
+
+# jdbc
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.40:3307/gmall_study
+    username: root
+    password: ok
+
+# mybtais配置
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+#日志级别
+logging:
+  level:
+     root: info
